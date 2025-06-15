@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_home"
+        android:id="@+id/homeFragment"
+        android:name="com.camgist.gceresults.home.HomeFragment"
+        android:label="@string/app_name" >
+        <action
+            android:id="@+id/action_homeFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/action_homeFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:launchSingleTop="false" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_resultListFragment"
+            app:destination="@id/resultListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tab7Fragment"
+            app:destination="@id/tab7Fragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_tab2Fragment"
+            app:destination="@id/tab2Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tab8Fragment"
+            app:destination="@id/tab8Fragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_disclaimerFragment"
+            app:destination="@id/disclaimerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_privacyFragment2"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_openSourceFragment"
+            app:destination="@id/openSourceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultListFragment"
+        tools:layout="@layout/fragment_result_list"
+        android:name="com.camgist.gceresults.resultlist.ResultListFragment"
+        android:label="Results" >
+        <argument android:name="resultList"
+            app:argType="com.camgist.gceresults.network.ResultData[]" />
+        <action
+            android:id="@+id/action_resultListFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_resultListFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_details"
+        android:id="@+id/detailsFragment"
+        android:name="com.camgist.gceresults.resultlist.details.DetailsFragment"
+        android:label="My Result" >
+        <argument
+            app:argType="com.camgist.gceresults.network.ResultData"
+            android:name="student_result" />
+        <action
+            android:id="@+id/action_detailsFragment_to_resultListFragment"
+            app:destination="@id/resultListFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_detailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_help"
+        android:id="@+id/helpFragment"
+        android:name="com.camgist.gceresults.homemenu.HelpFragment"
+        android:label="Help" />
+    <fragment
+        tools:layout="@layout/fragment_contact_us"
+        android:id="@+id/contactFragment"
+        android:name="com.camgist.gceresults.homemenu.ContactFragment"
+        android:label="Contact us" />
+    <fragment
+        tools:layout="@layout/fragment_about"
+        android:id="@+id/aboutFragment"
+        android:name="com.camgist.gceresults.homemenu.AboutFragment"
+        android:label="About" />
+
+    <fragment
+        android:id="@+id/tab2Fragment"
+        android:name="com.camgist.gceresults.home.tabs.NumberFragment"
+        android:label="Search Center Number" />
+    <fragment
+        android:id="@+id/tab7Fragment"
+        android:name="com.camgist.gceresults.home.tabs.NameFragment"
+        android:label="NAME" />
+    <fragment
+        android:id="@+id/tab8Fragment"
+        android:name="com.camgist.gceresults.home.tabs.CenterFragment"
+        android:label="Search Center Name" />
+    <fragment
+        android:id="@+id/disclaimerFragment"
+        tools:layout="@layout/fragment_disclaimer"
+        android:name="com.camgist.gceresults.homemenu.DisclaimerFragment"
+        android:label="Disclaimer" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.camgist.gceresults.homemenu.PrivacyFragment"
+        tools:layout="@layout/fragment_privacy"
+        android:label="Privacy Policy" />
+    <fragment
+        android:id="@+id/openSourceFragment"
+        android:name="com.camgist.gceresults.homemenu.OpenSourceFragment"
+        tools:layout="@layout/fragment_open_source"
+        android:label="Open Source" />
+</navigation>

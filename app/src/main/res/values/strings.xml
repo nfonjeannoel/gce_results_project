@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">GCE Results</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fetch_result">Fetch Result</string>
+    <string name="point_1">1. Make sure you have an active internet connection</string>
+    <string name="point_2">2. Cross check that all information is correctly filled</string>
+    <string name="point_3">3. No records matching this query were found</string>
+    <string name="center_number">%1$s</string>
+    <string name="level_and_year">%1$s %2$s</string>
+    <string name="total_points">%1$s</string>
+    <string name="papers_passed">%1$s</string>
+    <string name="request_failed">We were unable to complete this request. This might be because of one of the following reasons.</string>
+    <string name="my_result_search_by_name">My Result (Search by Name)</string>
+    <string name="center_result_search_center_number">Center Result (Search Center Number)</string>
+    <string name="center_result_filtered_by_papers">Center Result (Filtered by Papers)</string>
+    <string name="results_filtered_by_grades">Results (Filtered by Grades)</string>
+    <string name="all_results">All Results</string>
+    <string name="download_results">Download Results</string>
+    <string name="how_to_use_app">
+
+        To get your GCE results from this app, you need to follow a few simple procedures. \n
+First of all, it is important that you take note that this app works both online and offline. To access certain features, you need to be connected to the internet. For others, you don’t necessarily need an internet connection, provided you have already downloaded the resources. \n \n
+Slide left or right from the home screen to select different filters. For each tab, there is a note at the top which explains what the tab is used for. \n
+Key things to note here are: \n
+-  you need to fill in all fields data. \n
+- you need to enter data in correct format. Refer to the hints to get an idea. \n \n
+
+Once done, you can go ahead and tap on fetch results. Wait for a while as it loads your results. Make sure you have an active internet connection if the tab requires one. \n \n
+If you search is successful, you will be provided with a one or more names to choose from. \n
+You can then filter by papers passed, subjects passed, points, school, name etc\n \n
+Once you get your name, you will be directed to where you can view, share and download your result details. \n \n
+In case you face any difficulties using this app, please feel free to contact us and we will be at your service. \n \n
+
+         </string>
+    <string name="about">
+    <![CDATA[
+        Welcome to our GCE Results Checker App!
+
+        We provide a simple and efficient way for students in Cameroon to check their GCE results. With our app, you can instantly access your results without any hassle.
+
+        Why Choose Our App?
+        - Easy Access: Retrieve your GCE results with just a few taps.
+        - Reliable and Secure: Your information is kept private and accessed only by authorized individuals.
+        - Fast and Accurate: Get real-time and accurate results without manual checks or long waits.
+        - User-Friendly Interface: Our intuitive app design ensures effortless result retrieval.
+
+        How to Use the App:
+        1. Download and install the GCE Results Checker App.
+        2. Enter your examination details, including session, candidate number, and center number.
+        3. Tap the "Check Results" button to instantly retrieve your GCE results.
+
+        For any queries or assistance, please contact our support team.
+    ]]>
+</string>
+
+    <string name="disclaimer">
+    <![CDATA[
+        This app is not affiliated with or endorsed by any government entity.
+
+        The GCE results displayed in this app are sourced from official government publications. The information is obtained by scraping and parsing the results from the GCE results PDFs provided by the government on public platforms.
+
+        While we strive to provide accurate and up-to-date results, please note that the app is provided for informational purposes only. For official and verified results, we recommend referring to the official government sources or contacting the appropriate authorities.
+
+        By using this app, you acknowledge that the results obtained through this app are not official or legally binding. The app developers and publishers do not assume any responsibility for the accuracy or completeness of the results displayed.
+
+        For official inquiries or concerns regarding GCE results, please consult the relevant government authorities or official channels.
+
+        See our privacy policy at https://gceresults.jeangineer.com/privacy
+    ]]>
+</string>
+
+    <string name="privacy_policy">
+        Because our users need clear information about how this app handles their data, our privacy policy, describe how this app accesses, collects, uses, and shares data and how it limits the use of data to the purposes disclosed. \n
+        Please take a look at our privacy policy here \n <a href="https://gceresults.jeangineer.com/privacy">Privacy Policy</a>
+        </string>
+
+
+    <string-array name="spinner_years">
+        <item>2024</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+
+    </string-array>
+
+    <string-array name="spinner_grades">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+
+    </string-array>
+
+    <string-array name="spinner_levels">
+        <item>A-Level General</item>
+        <item>A-Level Technical</item>
+        <item>O-Level General</item>
+        <item>O-Level Technical</item>
+    </string-array>
+
+    <string-array name="spinner_papers_passed">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="search_name_help">Fill in your center number, select your level and type in the year using the example. For name, type one of your name. If typing all, make sure you type in the order which you registered. You need to be connected to the internet</string>
+</resources>

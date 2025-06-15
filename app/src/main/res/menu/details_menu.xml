@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/mi_share"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_share"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/mi_download"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_download"
+        android:title="Share" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/mi_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+</menu>

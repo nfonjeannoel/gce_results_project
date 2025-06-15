@@ -1,0 +1,46 @@
+package com.camgist.gceresults.homemenu
+
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import com.camgist.gceresults.R
+
+class OpenSourceFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_open_source, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        
+        val btnViewGitHub: Button = view.findViewById(R.id.btn_view_github)
+        val btnStarRepo: Button = view.findViewById(R.id.btn_star_repo)
+        
+        btnViewGitHub.setOnClickListener {
+            openUrl("https://github.com/nfonjeannoel/gce_results_project")
+        }
+        
+        btnStarRepo.setOnClickListener {
+            openUrl("https://github.com/nfonjeannoel/gce_results_project/stargazers")
+        }
+    }
+
+    private fun openUrl(url: String) {
+        try {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            startActivity(intent)
+        } catch (e: Exception) {
+            // Handle error if no browser is available
+        }
+    }
+} 

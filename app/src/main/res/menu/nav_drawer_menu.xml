@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/contactFragment"
+            android:icon="@drawable/ic_contact"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/helpFragment"
+            android:icon="@drawable/ic_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/aboutFragment"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+        <item
+            android:id="@+id/openSourceFragment"
+            android:icon="@drawable/ic_github"
+            android:title="Open Source" />
+        <item
+            android:id="@+id/disclaimerFragment"
+            android:icon="@drawable/ic_disclaimer"
+            android:title="Disclaimer" />
+        <item
+            android:id="@+id/privacyFragment"
+            android:icon="@drawable/ic_privacy"
+            android:title="Privacy Policy" />
+    </group>
+</menu>

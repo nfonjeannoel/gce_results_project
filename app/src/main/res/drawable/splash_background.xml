@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color -->
+    <item>
+        <color android:color="@color/blue_white"/>
+    </item>
+    <!-- Full image background -->
+    <item>
+        <bitmap android:src="@drawable/nav_image"
+                android:gravity="center|fill_horizontal"
+                android:scaleType="centerInside"/>
+    </item>
+</layer-list> 

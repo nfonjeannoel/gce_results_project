@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- GitHub icon always shown on top -->
+    <item
+        android:id="@+id/openSourceFragment"
+        android:icon="@drawable/ic_github"
+        android:title="Open Source"
+        app:showAsAction="always" />
+
+<!--    <item-->
+<!--        android:id="@+id/mi_help"-->
+<!--        android:icon="@drawable/ic_help"-->
+<!--        android:title="help"-->
+<!--        app:showAsAction="always" />-->
+
+    <group>
+        <item
+            android:id="@+id/tab7Fragment"
+            android:title="Search student name" />
+        <item
+            android:id="@+id/tab2Fragment"
+            android:title="Search center number" />
+        <item
+            android:id="@+id/tab8Fragment"
+            android:title="Search center name" />
+    </group>
+
+
+</menu>

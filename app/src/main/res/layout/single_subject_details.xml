@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:minHeight="40dp">
+
+        <TextView
+            android:id="@+id/tv_subject_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Mathematics"
+            android:textColor="@color/blue_navbar"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:minHeight="32dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/blue_light"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/grade_background"
+            android:padding="6dp"
+            android:minHeight="32dp" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/blue_navbar"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:minHeight="32dp" />
+
+    </LinearLayout>
+</layout>
