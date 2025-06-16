@@ -3,6 +3,7 @@
 An open-source Android application for GCE (General Certificate of Education) results management, designed to provide students with easy access to their examination results.
 
 **🌟 Currently live on Google Play Store!**
+📱 **[Download from Google Play Store](https://play.google.com/store/apps/details?id=com.camgist.gceresults&hl=en_US)**
 
 ## 🌐 Multi-Platform Availability
 
@@ -95,6 +96,80 @@ We welcome contributions from the community! Here's how you can help:
    git push origin feature/amazing-feature
    ```
 7. **Open a Pull Request**
+
+## 🌳 Branching Strategy
+
+This project follows a structured branching workflow:
+
+### Main Branches
+
+- **`main`** - Production-ready code. This branch contains stable releases and is protected.
+- **`develop`** - Integration branch for features. All feature development merges here first.
+
+### Feature Development Workflow
+
+1. **Start from develop branch**
+   ```bash
+   git checkout develop
+   git pull origin develop
+   ```
+
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Develop your feature**
+   - Make your changes
+   - Test thoroughly
+   - Follow coding conventions
+
+4. **Commit your changes**
+   ```bash
+   git add .
+   git commit -m "feat: add your feature description"
+   ```
+
+5. **Push feature branch**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+6. **Create Pull Request**
+   - Target the `develop` branch
+   - Provide clear description
+   - Request code review
+
+7. **After PR approval and merge**
+   ```bash
+   git checkout develop
+   git pull origin develop
+   git branch -d feature/your-feature-name  # Delete local feature branch
+   ```
+
+### Release Process
+
+1. Features are merged into `develop`
+2. When ready for release, `develop` is merged into `main`
+3. `main` branch triggers deployment to Google Play Store
+
+### 📝 Commit Message Guidelines
+
+Use conventional commit format:
+- `feat:` - New features
+- `fix:` - Bug fixes
+- `docs:` - Documentation changes
+- `style:` - Code formatting
+- `refactor:` - Code restructuring
+- `test:` - Adding tests
+- `chore:` - Maintenance tasks
+
+Example:
+```bash
+git commit -m "feat: add offline result caching"
+git commit -m "fix: resolve login validation issue"
+git commit -m "docs: update README with new setup instructions"
+```
 
 ### 📋 Development Guidelines
 
